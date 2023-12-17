@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.top {
+  width: 100%;
+  min-height: 60vh;
+  background-color: rebeccapurple;
+  background-image: url(https://images.unsplash.com/photo-1682686578023-dc680e7a3aeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 50% 70%;
+}
+
+.overlay {
+  width: 100%;
+  min-height: inherit;
+  background-color: rgba(0, 0, 0, 0.418);
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  bottom: 20%;
+  padding: 0px 5vw;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tright {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  align-items: center;
+}
+.icons i {
+  padding: 0px 8px;
+}
+
+.tright p {
+  font-size: 14px;
+  width: 20%;
+}
+.text h1 {
+  font-size: 6vw;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+.text h1::before {
+  content: "NOISE";
+  font-size: 6vw;
+  position: absolute;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(189, 189, 189);
+  color: transparent;
+  left: 5px;
+  z-index: -1;
+}
+
+.bottom {
+  width: 100%;
+  min-height: 20vh;
+  background-color: paleturquoise;
+  display: flex;
+}
+
+.bone {
+  width: 25%;
+  min-height: inherit;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+}
+.bone p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.btwo {
+  width: 25%;
+  min-height: inherit;
+  /* background-color: rgb(221, 113, 221); */
+  background-image: url(https://storage.googleapis.com/pai-images/87918c98faa44f34b751e97d749f5461.jpeg);
+  background-position: top;
+  background-size: cover;
+}
+.bthree {
+  width: 20%;
+  min-height: inherit;
+  background-color: rgb(205, 26, 205);
+}
+.bttop {
+  width: 100%;
+  min-height: 20vh;
+  background-color: rgb(232, 73, 0);
+  padding: 30px;
+  color: #ffffffcd;
+}
+.bttop p {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.btbottom {
+  width: 100%;
+  min-height: 20vh;
+  background-image: url(https://storage.googleapis.com/pai-images/693b08e1c9e44825b147364afddbe68a.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.bfour {
+  width: 30%;
+  min-height: inherit;
+  background-color: rgb(255, 244, 235);
+  padding: 30px;
+}
+.notif {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.notif .photo {
+  width: 40px;
+  width: 40px;
+  background-color: red;
+  border-radius: 50%;
+  background-image: url(https://storage.googleapis.com/pai-images/fa7a2857c8564bd0b4e43b7c6744348d.jpeg);
+  background-size: cover;
+  box-shadow: 5px 5px 9px rgb(171 82 0 / 36%);
+}
+
+.notif p {
+  width: 85%;
+}
+
+@media (max-width: 600px) {
+  .overlay .text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .overlay .text .tright {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tright p {
+    width: initial;
+    margin-top: 20px;
+  }
+  .overlay .text .tright .icons {
+    margin-top: 30px;
+  }
+  .text h1 {
+    font-size: 15vw;
+  }
+  .text h1::before {
+    content: "NOISE";
+    font-size: 15vw;
+    position: absolute;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(208, 205, 205, 0.582);
+    color: transparent;
+    left: 4px;
+    top: 1px;
+    z-index: -1;
+  }
+  .bottom{
+    flex-direction: column;
+  }
+  .bone{
+    width: 100%;
+  }
+  .btwo{width: 100%;
+    min-height: 40vh;
+}
+  .bthree{
+    width: 100%;
+}
+
+  .bfour{
+    width: 100%;
+    
+}
+.notif p {
+    margin-left: 20px;
+
+}
+
+}
