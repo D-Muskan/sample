@@ -14,7 +14,7 @@ html {
   background-color: #222;
 }
 .page1 {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color: #c0b8af;
   position: relative;
@@ -145,7 +145,7 @@ html {
 /* page 2 */
 
 .page2 {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #c5bcb1;
   display: flex;
@@ -165,6 +165,7 @@ border-right: 1px solid #222;
 .pg2-left h2 {
   text-align: center;
   font-size: 60px;
+  color: #1c1c1c;
 }
 .pg2-left h2 span {
   text-align: center;
@@ -175,7 +176,25 @@ border-right: 1px solid #222;
 object-fit: cover;
  width: 100%;
 }
-
+.pg2-left p{
+  margin-top: 40px;
+  font-size: 25px;
+  text-align: left;
+}
+.pg2-right h1{
+  margin-top: 40px;
+  font-size: 60px;
+}
+.pg2-left p::first-letter{
+  float: left;
+  font-size: 61px;
+  line-height: 4vw;
+  margin: 0.5vw 0.8vw 0vw 0vw;
+  background-color: #1c1c1c;
+  color: #CDC6BE;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
 
 .pg2-right {
   height: 100%;
@@ -188,3 +207,212 @@ object-fit: cover;
 }
 
 /* page 2 */
+
+
+/* page3 */
+.page3{
+height: 50vh;
+position: relative;
+  background-color: #c0b8af;
+}
+.pg3-oneline{
+height: 100%;
+}
+.page3 .pg3-oneline h1{
+  font-size: 220px;
+  background-color: #202020;
+  color: #c5bcb1;
+  width: fit-content;
+  margin-left: 2%;
+  padding: 2px 40px;
+  line-height: 345px;
+}
+.page3 img{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 5%;
+  width: 20%;
+
+}
+/* page3 */
+
+/* page 4 */
+
+.page4{
+  width: 100%;
+  height: 100%;
+  background-color: #c5bcb1;
+  padding: 10px 1px;
+  display: flex;
+  
+}
+
+.pg4-left{
+width: 60%;
+}
+
+.pg4-top{
+  display: flex;
+  margin-bottom: 20px;
+}
+.pg4-topl{
+  width: 50%;
+  padding: 10px 30px;
+  border-right: 1px solid #38383884;
+}
+.pg4-topl h1{
+  font-size:40px;
+  letter-spacing: -4px;
+}
+
+.pg4-topl h3{
+  font-weight: lighter;
+  font-size: 35px;
+  margin: 15px 1px;
+}
+
+.pg4-topl p{
+  font-weight: light;
+}
+
+.pg4-topr{
+width: 50%;
+padding: 10px 30px;
+}
+.pg4-topr img{
+width: 90%;
+}
+
+.pg4-topr h2{
+  letter-spacing: -3px;
+  margin: 5px 1px;
+}
+.pg4-topr p{
+  width: 90%;
+}
+
+
+/* pg 4 bottom  */
+.pg4-bottom img{
+  width: 100%;
+  padding: 2px 30px;
+}
+
+
+/* page 4 right */
+.pg4-right{
+  width: 40%;
+  padding: 1px 40px;
+  border-left: 1px solid #4848485b;
+}
+.pg4-right h1{
+  font-size: 70px;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+}
+.pg4-right h6 , h5{
+  width: 90%;
+  font-size: 25px;
+  font-weight: 100;
+}
+.pg4-right h6::first-letter{
+  float: left;
+  font-size: 61px;
+  line-height: 4vw;
+  margin: 0.5vw 0.8vw 0vw 0vw;
+  background-color: #1c1c1c;
+  color: #CDC6BE;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.pg4-right .anda{
+height: 150px;
+width: 80%;
+border-radius: 50%;
+background-color: transparent;
+margin-top: 20px;
+border: 1px solid #333;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: nowrap;
+overflow: hidden;
+
+}
+
+.anda h1{
+  font-size: 60px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-35%);
+  transition: transform 0.5s ease-in-out;
+
+
+}
+.anda img{
+  height: 50px;
+  transform: translateX(-120%);
+  transition: transform 0.5s ease-in-out;
+
+  
+}
+.anda:hover img{
+  transform: translateX(100%);
+}
+.anda:hover h1{
+  transform: translateX(150%);
+ 
+}
+
+/* page 5 */
+
+.page5{
+  height: 100%;
+  width: 100%;
+  background-color: #c0b8af;
+  padding: 20px 0;
+  border-top: 1px solid #1d1c1c;
+  border-bottom: 1px solid #1d1c1c;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.page5::-webkit-scrollbar{
+  display: none;
+}
+
+.page5 h1{
+ font-weight: 100;
+  font-size: 60px;
+  display: inline-block;
+  margin-right: 20px;
+  animation-name: scroll;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.page5 h1 span{
+  background-color: #202020;
+  color: #c5bcb1;
+  font-weight: 600;
+padding: 0 20px;
+
+}
+.page5:hover h1{
+  animation-play-state: paused;
+}
+
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+
+  }
+  100%{
+    transform: translateX(calc(-100% - 24px));
+  }
+}
